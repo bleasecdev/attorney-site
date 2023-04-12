@@ -1,0 +1,158 @@
+.navbar-light .navbar-nav .nav-link{
+    color: #497B9E;
+}
+
+.navbar-light .navbar-brand{
+    color: #497B9E;
+    padding-left: 100px;
+}
+
+#navbarNav{
+    padding-right: 100px;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-brand {
+      padding-left: 0 ! important;
+    }
+  }
+
+a.navbar-brand {
+    font-family: 'Playfair Display SC', serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+a.nav-link{
+    font-family: 'Cormorant Garamond', serif;;
+    font-size: 1.50rem;
+}
+  
+  
+.masthead {
+    position: relative;
+    height: 100vh;
+    margin-bottom: 50px;
+}
+
+.masthead-content .phone-number{
+    font-style: 'Montserrat';
+}
+  
+.masthead video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+  .masthead .masthead-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-family: 'Cormorant Garamond', serif;
+}
+  
+.masthead .masthead-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+  
+.masthead .masthead-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+  
+.masthead .masthead-content .btn {
+    font-size: 1.25rem;
+    padding: 1rem 2rem;
+    border-radius: 0;
+}
+
+.sub-header {
+    margin-bottom: 35px;
+}
+
+.btn-primary {
+    background-color: #497B9E ! important;
+    color: #fff;
+}
+  
+.slide-in-left {
+    animation: slide-in-left 1s ease-out forwards;
+}
+  
+.slide-in-right {
+    animation: slide-in-right 1s ease-out forwards;
+}
+  
+.slide-in-bottom {
+    animation: slide-in-bottom 1s ease-out forwards;
+}
+
+
+
+@keyframes slide-in-left {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+@keyframes slide-in-right {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+  
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+@keyframes slide-in-bottom {
+    from {
+      transform: translateY(50%);
+      opacity: 0;
+    }
+  
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  #services .row > div {
+    padding: 0 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  #about{
+    margin-bottom: 50px;
+  }
+
+
+  .scroll-slide-left, .scroll-slide-right {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.5s ease;
+  }
+  
+  .scroll-slide-left.active, .scroll-slide-right.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
