@@ -154,7 +154,7 @@ a.nav-link{
 @media only screen and (max-device-width: 414px) {
   .masthead video{
     left: -15%;
-    width: 130%;
+    width: 160%;
   }
   .masthead .masthead-content {
     font-size: 2rem;
