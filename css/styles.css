@@ -17,6 +17,15 @@
     }
   }
 
+@media only screen and (max-width: 479px) {
+  .navbar-brand {
+  font-size: 1.5rem ! important;
+  padding: 0;
+  margin: 0;
+    }
+  }
+    
+
 a.navbar-brand {
     font-family: 'Playfair Display SC', serif;
     font-weight: bold;
@@ -86,7 +95,7 @@ a.nav-link{
     font-size: 24px;
     line-height: 60px; /* Set line-height equal to height of circle */
     display: block;
-    margin-top: -1px; /* Adjust margin-top to perfectly center phone icon */
+    margin-top: -11px; /* Adjust margin-top to perfectly center phone icon */
     margin-left: -3px;
   }
 }
@@ -141,6 +150,23 @@ a.nav-link{
     padding: 1rem 2rem;
     border-radius: 0;
 }
+
+@media (max-width: 479px) {
+  .masthead-content h1 {
+    font-size: 2.5rem !important;
+  }
+  
+  .masthead-content h2 {
+    font-size: 1.5rem !important;
+  }
+  
+  .masthead-content .btn {
+    font-size: 1rem !important;
+    padding: 0.75rem 1.5rem !important;
+  }
+}
+
+
 
 .sub-header {
     margin-bottom: 35px;
@@ -245,7 +271,7 @@ a.nav-link{
   
   .services-container img:hover {
     filter: none;
-    border: 10px solid #497B9E;
+    border: 8px solid #497B9E;
   }
 
   @media (max-width: 992px) {
@@ -256,22 +282,24 @@ a.nav-link{
     
     .services-container img:hover, .services-container img.active {
       filter: none;
-      border: 10px solid #497B9E;
+      border: 8px solid #497B9E;
       border-radius: 50%;
     }    
   }
   
-  
-  
-  
 
   @media (max-width: 767px) {
     .services-container img {
-      max-width: 50%;
+      max-width: 60%;
     }
   }
   
   
 footer{
   text-align: center;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
 }
