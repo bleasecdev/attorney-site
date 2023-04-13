@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+  padding: 0;
+}
 .navbar-light .navbar-nav .nav-link{
     color: #497B9E;
 }
@@ -183,6 +187,51 @@ a.nav-link{
   }
 }
 
+section.masthead-2 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background: linear-gradient(to bottom, rgb(73, 123, 158) -15%, rgba(0, 0, 0, 0.8) 100%), url("../assets/pexels-styves-exantus-8436663.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+section.masthead-2 h1, section.masthead-2 .h1 {
+  font-size: 2.25rem;
+  font-family: 'Playfair Display SC', serif;
+  color: #fff;
+}
+
+section.masthead-2 h2{
+  color: #fff;
+} 
+
+@media (min-width: 992px) {
+  section.masthead-2 {
+    height: 20vh;
+    min-height: 20rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+  }
+
+  section.masthead-2 p {
+    font-size: 1.15rem;
+    color: #fff;
+  }
+
+  section.masthead-2 h1, section.masthead-2 .h1 {
+    font-size: 3rem;
+    color: #fff;
+  }
+}
+
+@media (min-width: 1200px) {
+  section.masthead-2 h1, section.masthead-2 .h1 {
+    font-size: 3.5rem;
+  }
+}
+
 
 
 
@@ -323,3 +372,59 @@ html, body {
   width: 100%;
   overflow-x: hidden;
 }
+
+.btn.btn-xl {
+  font-family: 'Cormorant Garamond', serif;;
+  margin-top: 20px;
+  font-size: 24px;
+  padding: 10px 20px;
+}
+
+#find-us{
+  background-color: lightgray;
+  margin-top: 0px;
+  padding-top: 25px;
+}
+
+#find-us h1{
+  font-family: 'Playfair Display SC', serif;
+}
+
+#find-us p{
+  font-family: 'Cormorant Garamond', serif;
+}
+
+#find-us .btn-primary {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+@media (min-width: 768px) {
+  .map {
+    margin-left: 100px;
+  }
+
+  @media (max-width: 991.98px) {
+    .map {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .map {
+      margin-top: 2rem !important;
+    }
+  }
+  
+
+
+
+  
+  .col-md-8 {
+    padding-top: 80px;
+  }
+}
+
