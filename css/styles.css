@@ -150,6 +150,28 @@ a.nav-link{
   }
 }
 
+/* Styles for iPhone devices */
+@media only screen and (max-device-width: 414px) {
+  .masthead .masthead-content {
+    font-size: 2rem;
+  }
+
+  .masthead .masthead-content h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .masthead .masthead-content h2 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+
+  .masthead .masthead-content .btn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
 .sub-header {
     margin-bottom: 35px;
 }
