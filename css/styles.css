@@ -28,6 +28,67 @@ a.nav-link{
     font-size: 1.50rem;
 }
   
+.phone-button {
+  position: fixed;
+  right: 0;
+  bottom: 20px;
+  background-color: #497B9E;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  z-index: 9999;
+  transition: all 0.3s ease-out;
+}
+
+.phone-button.scroll {
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 50%;
+}
+
+.phone-button.scroll .bi {
+  font-size: 20px;
+  line-height: 50px;
+  display: block;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.phone-button.scroll .button-text {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.phone-button .bi {
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 576px) {
+  .phone-button .button-text {
+    display: none;
+  }
+}
+
+
+
   
 .masthead {
     position: relative;
@@ -90,7 +151,7 @@ a.nav-link{
   
 .slide-in-right {
     animation: slide-in-right 1s ease-out forwards;
-}
+}ß
   
 .slide-in-bottom {
     animation: slide-in-bottom 1s ease-out forwards;
@@ -144,6 +205,16 @@ a.nav-link{
     margin-bottom: 50px;
   }
 
+  h2{
+    font-family: 'Playfair Display SC', serif;
+  }
+
+  p{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+  }
+  
+
 
   .scroll-slide-left, .scroll-slide-right {
     opacity: 0;
@@ -156,3 +227,45 @@ a.nav-link{
     transform: translateX(0);
   }
   
+  .section-heading {
+    color: #497B9E;
+  }
+
+  .services-container img {
+    filter: grayscale(100%) saturate(30%);
+    transition: all 0.3s ease-in-out;
+    border-radius: 50%;
+  }
+  
+  .services-container img:hover {
+    filter: none;
+    border: 10px solid #497B9E;
+  }
+
+  @media (max-width: 992px) {
+    .services-container img {
+      filter: grayscale(100%) saturate(30%);
+      transition: all 1.5s ease-in-out;
+    }
+    
+    .services-container img:hover, .services-container img.active {
+      filter: none;
+      border: 10px solid #497B9E;
+      border-radius: 50%;
+    }    
+  }
+  
+  
+  
+  
+
+  @media (max-width: 767px) {
+    .services-container img {
+      max-width: 50%;
+    }
+  }
+  
+  
+footer{
+  text-align: center;
+}

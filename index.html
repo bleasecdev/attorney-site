@@ -11,7 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Playfair+Display+SC:wght@400;700;900&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">   
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
@@ -36,6 +37,12 @@
         </div>
       </nav>
       
+      <a href="tel:410-347-9690" class="phone-button">
+        <i class="bi bi-phone"></i>
+        <span class="sr-only">Call Us Now!</span>
+      </a>
+      
+
       
 
       <section class="masthead">
@@ -48,7 +55,7 @@
           <h1 class="slide-in-left">Expert Legal Representation</h1>
           <hr>
           <h2 class="slide-in-right sub-header">Personalized For You.</h2>
-          <a href="#learn-more" class="btn btn-primary slide-in-bottom">Find Out More</a>
+          <a href="#learn-more" class="btn btn-primary slide-in-left">Find Out More</a>
         </div>
       </section>
 
@@ -57,7 +64,7 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-8 text-center">
-              <h2 class="text-black scroll-slide-left">Our Firm</h2>
+              <h2 class="section-heading scroll-slide-left">Why Choose Us?</h2>
               <hr class="divider divider-light scroll-slide-right" />
               <p class="text-black scroll-slide-left">For over 20 years, the name Bonner has stood for excellence in legal representation. At The Bonner Firm, P.C., we continue to build on that legacy by offering our clients personalized and effective legal solutions. Jai Bonner is dedicated to providing sound legal advice, strong advocacy, and a commitment to achieving results for her clients. She approaches every case with integrity and professionalism, and strives to ensure that her clients receive the highest level of representation. Contact us today to schedule a consultation and experience the difference that The Bonner Firm can make for you.</p>
               <a class="btn btn-primary btn-xl scroll-slide-right" href="#services">Get Started!</a>
@@ -69,67 +76,76 @@
       
       <!-- Services-->
       <section class="page-section" id="services">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading">Areas of Practice</h2>
-                <hr class="divider"/>
+        <div class="services-container container">
+          <div class="text-center">
+            <h2 class="section-heading scroll-slide-left">Areas of Practice</h2>
+            <hr class="divider scroll-slide-right"/>
+          </div>
+          <div class="row text-center">
+            <div class="col-md-3">
+              <a href="criminal-defense.html" id="criminal-defense">
+                <img class="img-fluid muted scroll-slide-left" src="assets/pexels-jimmy-chan-1309902-modified.png"/>
+              </a>
+              <h4 class="my-3 scroll-slide-left">Criminal Defense</h4>
             </div>
-            <div class="row text-center">
-                <div class="col-md-3">
-                    <span id= "experience" class="fa-stack fa-4x">
-                        <img class= "img-fluid" src="assets/img/pexels-andrea-piacquadio-3770291-modified.png" />
-                    </span>
-                    <h4 class="my-3">Crimnal Cases</h4>
-                </div>
-                <div class="col-md-3">
-                    <span id= "experience" class="fa-stack fa-4x">
-                        <img class= "img-fluid" src="assets/img/pexels-cottonbro-studio-3997983-modified.png" />
-                    </span>
-                    <h4 class="my-3">Personal Injury</h4>
-                </div>
-                <div class="col-md-3">
-                    <span id= "experience" class="fa-stack fa-4x">
-                        <img class= "img-fluid" src="assets/img/pexels-adrien-olichon-3534750-modified.jpg" />
-                    </span>
-                    <h4 class="my-3">Real Estate Law</h4>
-                </div>
-                <div class="col-md-3">
-                    <span id= "experience" class="fa-stack fa-4x">
-                        <img class= "img-fluid" src="assets/img/pexels-red-heart-15777735-modified.png" />
-                    </span>
-                    <h4 class="my-3">Business Law</h4>
-                </div>
-                <div class="col-md-3">
-                    <span id= "experience" class="fa-stack fa-4x">
-                        <img class= "img-fluid" src="assets/img/pexels-ron-lach-9519968-modified.png" />
-                    </span>
-                    <h4 class="my-3">Civil Law</h4>
-                </div>
-                <div class="col-md-3">
-                    <span id= "experience" class="fa-stack fa-4x">
-                        <img class= "img-fluid" src="assets/img/pexels-cottonbro-studio-4065133-modified.png" />
-                    </span>
-                    <h4 class="my-3">Mediation</h4>
-                </div>
-                <div class="col-md-3">
-                    <span id= "experience" class="fa-stack fa-4x">
-                        <img class= "img-fluid" src="assets/img/pexels-cottonbro-studio-4065133-modified.png" />
-                    </span>
-                    <h4 class="my-3">General Corporate Representation</h4>
-                </div>
-                <div class="col-md-3">
-                    <span id= "experience" class="fa-stack fa-4x">
-                        <img class= "img-fluid" src="assets/img/pexels-cottonbro-studio-4065133-modified.png" />
-                    </span>
-                    <h4 class="my-3">HR Consulting</h4>
-                </div>
+            
+            <div class="col-md-3">
+              <a href="personal-injury.html" id="personal-injury">
+                <img class="img-fluid muted scroll-slide-left" src="assets/matt-c-ZI-vWZBbwj8-unsplash-modified.png"/>
+              </a>
+              <h4 class="my-3 scroll-slide-left">Personal Injury</h4>
             </div>
+            
+            <div class="col-md-3">
+              <a href="real-estate-law.html" id="real-estate-law">
+                <img class="img-fluid muted scroll-slide-right" src="assets/pexels-photomix-company-101808-modified.png"/>
+              </a>
+              <h4 class="my-3 scroll-slide-right">Real Estate Law</h4>
+            </div>
+            
+            <div class="col-md-3">
+              <a href="business-law.html" id="business-law">
+                <img class="img-fluid muted scroll-slide-right" src="assets/pexels-pixabay-261621-modified.png"/>
+              </a>
+              <h4 class="my-3 scroll-slide-right">Business Law</h4>
+            </div>
+            
+            <div class="col-md-3">
+              <a href="civil-law.html" id="civil-law">
+                <img class="img-fluid muted scroll-slide-left" src="assets/sebastian-pichler-bAQH53VquTc-unsplash-modified.png"/>
+              </a>
+              <h4 class="my-3 scroll-slide-left">Civil Law</h4>
+            </div>
+            
+            <div class="col-md-3">
+              <a href="family-law.html" id="family-law">
+                <img class="img-fluid muted scroll-slide-left" src="assets/pexels-alex-green-5700170-modified.png"/>
+              </a>
+              <h4 class="my-3 scroll-slide-left">Family Law</h4>
+            </div>
+            
+            <div class="col-md-3">
+              <a href="corporate-representation.html" id="corporate-representation">
+                <img class="img-fluid muted scroll-slide-right" src="assets/pexels-sevenstorm-juhaszimrus-443383-modified.png"/>
+              </a>
+              <h4 class="my-3 scroll-slide-right">General Corporate Representation</h4>
+            </div>
+            
+            <div class="col-md-3">
+              <a href="hr-consulting.html" id="hr-consulting">
+                <img class="img-fluid muted scroll-slide-right" src="assets/christina-wocintechchat-com-eF7HN40WbAQ-unsplash-modified.png"/>
+              </a>
+              <h4 class="my-3 scroll-slide-right">HR Consulting</h4>
+            </div>
+          </div>
         </div>
-       </section>
+      </section>
+      <hr class="divider">
       
-
-       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-       <script>
+      
+       
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
          $(window).scroll(function() {
            $(".scroll-slide-left, .scroll-slide-right").each(function() {
              var position = $(this).offset().top;
@@ -139,8 +155,152 @@
              }
            });
          });
-       </script>
+     </script>
+    <script>
+      $(window).scroll(function() {
+        $(".services-container img").each(function() {
+          var position = $(this).offset().top;
+          var windowTop = $(window).scrollTop() + $(window).height() * 0.8;
+          if (position < windowTop) {
+            $(this).addClass("active");
+          }
+        });
+      });
+    </script>
 
+<section class="page-section" id="contact">
+  <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-lg-8 col-xl-6 text-center">
+              <h2 class="mt-0 scroll-slide-left">Let's Get In Touch</h2>
+              <hr class="divider scroll-slide-left" />
+              <p class="text-muted mb-5 scroll-slide-right">Are you ready to join the team? Send us a message and we will get back to you as soon as possible.</p>
+          </div>
+      </div>
+      <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+          <div class="col-lg-6">
+              <!-- * * * * * * * * * * * * * * *-->
+              <!-- * * SB Forms Contact Form * *-->
+              <!-- * * * * * * * * * * * * * * *-->
+              <!-- This form is pre-integrated with SB Forms.-->
+              <!-- To make this form functional, sign up at-->
+              <!-- https://startbootstrap.com/solution/contact-forms-->
+              <!-- to get an API token!-->
+              <form id="contactForm">
+                  <!-- Name input -->
+                  <div class="form-floating mb-3">
+                    <input class="form-control" id="name" type="text" placeholder="Enter your name..." required>
+                    <label for="name">Full name</label>
+                  </div>
+                
+                  <!-- Email address input -->
+                  <div class="form-floating mb-3">
+                    <input class="form-control" id="email" type="email" placeholder="name@example.com" required>
+                    <label for="email">Email address</label>
+                  </div>
+                
+                  <!-- Phone number input -->
+                  <div class="form-floating mb-3">
+                    <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" required>
+                    <label for="phone">Phone number</label>
+                  </div>
+                
+                  <!-- Message input -->
+                  <div class="form-floating mb-3">
+                    <textarea class="form-control" id="message" placeholder="Enter your message here..." style="height: 10rem" required></textarea>
+                    <label for="message">Message</label>
+                  </div>
+                
+                  <!-- Submit Button -->
+                  <div class="d-grid">
+                    <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Submit</button>
+                  </div>
+                </form>
+                
+                <script>
+                  const form = document.getElementById('contactForm');
+                  const nameInput = document.getElementById('name');
+                  const emailInput = document.getElementById('email');
+                  const phoneInput = document.getElementById('phone');
+                  const messageInput = document.getElementById('message');
+                  const submitButton = document.getElementById('submitButton');
+                
+                  // Add event listeners to all form inputs to check if they are valid
+                  form.addEventListener('input', checkValidity);
+                
+                  function checkValidity() {
+                    // Check if all required fields have been filled in
+                    if (nameInput.checkValidity() && emailInput.checkValidity() && phoneInput.checkValidity() && messageInput.checkValidity()) {
+                      submitButton.classList.remove('disabled'); // Enable submit button
+                    } else {
+                      submitButton.classList.add('disabled'); // Disable submit button
+                    }
+                  }
+                
+                  // Add event listener to form submit event
+                  form.addEventListener('submit', (event) => {
+                    event.preventDefault(); // Prevent the default form submission
+                
+                    // Construct the mailto URL with pre-filled fields
+                    const mailtoUrl = `mailto:admin@thebonnerfirm.com?subject=The Bonner Firm Website Inquiry&body=Name: ${nameInput.value}%0D%0AEmail: ${emailInput.value}%0D%0APhone: ${phoneInput.value}%0D%0AMessage: ${messageInput.value}`;
+                
+                    // Open the email client with the pre-filled email
+                    window.location.href = mailtoUrl;
+                  });
+                </script>                                              
+          </div>
+      </div>
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-lg-4 text-center mb-5 mb-lg-0"> 
+              <i class="bi-phone fs-2 mb-3 text-muted"></i>
+              <div>+1 (410) 347-9690</div>
+          </div>
+      </div>   
+  </div>
+</section>
+
+<footer class="footer bg-light py-5">
+  <div class="spacer">
+      <a href="https://www.facebook.com/profile.php?id=100091322204479" target="_blank" class="social-link">
+          <i class="bi bi-facebook social-icon"></i>
+      </a>
+      <a href="https://twitter.com/EconSentry" target="_blank" class="-social-link">
+      <i class="bi bi-twitter social-icon"></i>
+      </a>
+      <a href="https://www.instagram.com/econsentryinvestments/" target="_blank" class="social-link">
+      <i class="bi bi-instagram social-icon"></i>
+      </a>
+      <a href=https://www.linkedin.com/company/econ-sentry-investments/ target="_blank" class="social-link">
+      <i class="bi bi-linkedin social-icon"></i>
+      </a>
+  </div>
+  <p>Copyright &copy; 2023 - The Bonner Firm</p>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- SimpleLightbox plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+<!-- * *                               SB Forms JS                               * *-->
+<!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     
+
+<script>
+    $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if (scroll >= 100) {
+      $('.phone-button').addClass('scroll');
+      $('.phone-button i').addClass('bi-phone');
+      $('.phone-button span').text('');
+    } else {
+      $('.phone-button').removeClass('scroll');
+      $('.phone-button i').removeClass('bi-phone');
+      $('.phone-button span').text('Call Us Now!');
+    }
+  });
+</script>
 </body>
 </html>
