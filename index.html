@@ -49,8 +49,10 @@
       
 
       <section class="masthead">
-        <video autoplay loop muted playsinline poster="your-fallback-image.jpg">
+        <video autoplay loop muted playsinline>
           <source src="assets/pexels-pavel-danilyuk-8061655-3840x2160-25fps.mp4" type="video/mp4">
+          <!-- Fallback for older browsers -->
+          <img src="your-fallback-image.jpg" alt="Fallback image description">
         </video>
         <div class="masthead-content">
           <h1 class="slide-in-left">Expert Legal Representation</h1>
@@ -59,7 +61,6 @@
           <a href="#learn-more" class="btn btn-primary slide-in-left">Find Out More</a>
         </div>
       </section>
-      
 
       <!-- About-->
       <section class="page-section" id="about">
