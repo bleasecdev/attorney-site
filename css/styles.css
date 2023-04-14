@@ -402,6 +402,7 @@ html, body {
   .map {
     margin-left: 100px;
   }
+}
 
   @media (max-width: 991.98px) {
     .map {
@@ -422,5 +423,5 @@ html, body {
   .col-md-8 {
     padding-top: 80px;
   }
-}
+
 
