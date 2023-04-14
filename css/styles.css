@@ -153,7 +153,6 @@ a.nav-link{
 .masthead .masthead-content .btn {
     font-size: 1.25rem;
     padding: 1rem 2rem;
-    border-radius: 0;
 }
 
 @media (max-width: 479px) {
@@ -234,7 +233,9 @@ section.masthead-2 h2{
 
 
 
-
+#services h4 {
+  font-family: 'Cormorant Garamond', serif;
+}
 
 
 .sub-header {
