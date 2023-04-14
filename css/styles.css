@@ -382,8 +382,8 @@ html, body {
 
 #find-us{
   background-color: lightgray;
-  margin-top: 0px;
-  padding-top: 25px;
+  margin-top: 10px;
+  padding-top: 0px;
 }
 
 #find-us h1{
@@ -422,6 +422,12 @@ html, body {
   
   .col-md-8 {
     padding-top: 80px;
+  }
+
+  @media (max-width: 767px){
+    .col-md-8{
+      padding-top: 30px;
+    }
   }
 
 
