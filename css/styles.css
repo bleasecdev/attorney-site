@@ -381,7 +381,11 @@ section.masthead-2 .btn {
   
 footer{
   text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
+
+
 
 html, body {
   width: 100%;
