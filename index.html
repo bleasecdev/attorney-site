@@ -219,6 +219,7 @@
                   <div class="d-grid">
                     <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Submit</button>
                   </div>
+                  <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
                 </form>
                 
                 <script>
@@ -233,9 +234,15 @@
                   form.addEventListener('input', checkValidity);
                 
                   function checkValidity() {
-                    // Check if all required fields have been filled in
+                      // Check if all required fields have been filled in
                     if (nameInput.checkValidity() && emailInput.checkValidity() && phoneInput.checkValidity() && messageInput.checkValidity()) {
-                      submitButton.classList.remove('disabled'); // Enable submit button
+                        // Check if reCAPTCHA has been filled out
+                      const recaptchaInput = document.querySelector('.g-recaptcha-response');
+                      if (recaptchaInput.value) {
+                        submitButton.classList.remove('disabled'); // Enable submit button
+                      } else {
+                        submitButton.classList.add('disabled'); // Disable submit button
+                      }
                     } else {
                       submitButton.classList.add('disabled'); // Disable submit button
                     }
@@ -317,5 +324,7 @@
     }
   });
 </script>
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 </html>
