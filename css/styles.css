@@ -557,3 +557,15 @@ html, body {
     padding-top: 30px;
     padding-bottom: 30px;
   }
+
+  #disclaimer{
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  #disclaimer p{
+    font-size: small;
+  }
+  
+  #disclaimer h3{
+    font-size: medium;
+  }
