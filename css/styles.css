@@ -23,11 +23,18 @@ body {
 
 @media only screen and (max-width: 479px) {
   .navbar-brand {
-  font-size: 1.5rem ! important;
+  font-size: 1.05rem ! important;
   padding: 0;
   margin: 0;
     }
   }
+
+  @media only screen and (max-width: 1024px) {
+    .navbar-brand {
+    padding: 0 !important;
+    margin: 0 !important;
+      }
+    }
     
 
 a.navbar-brand {
@@ -210,7 +217,7 @@ section.masthead-2 h2{
   section.masthead-2 {
     height: 20vh;
     min-height: 20rem;
-    padding-top: 4.5rem;
+    padding-top: 2.5rem;
     padding-bottom: 0;
   }
 
@@ -391,6 +398,10 @@ html, body {
   font-family: 'Playfair Display SC', serif;
 }
 
+#find-us h2{
+  font-size: 1.5rem;
+}
+
 #find-us p{
   font-family: 'Cormorant Garamond', serif;
 }
@@ -447,7 +458,102 @@ html, body {
     .map h2 {
       margin-bottom: 0px;
     }
+  }  
+  
+  @media (max-width: 768px) {
+    #find-us .col-md-8,
+    #find-us .col-md-3 {
+      width: 100%;
+      float: none;
+    }
+    .map{
+      margin-left: 0px;
+    }
+    hr.findus-div{
+      width: 100%;
+    }
   }
   
- 
+  @media (max-width: 1024px) {
+    #find-us .col-md-8,
+    #find-us .col-md-3 {
+      width: 100%;
+      float: none;
+    }
+    .map{
+      margin-left: 0px;
+    }
+    h2{
+      padding-left: 0px;
+    }
+  }
+  
+  
 
+  #practices1{
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  #practices2{
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: lightgray;
+  }
+
+  #practices3{
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+  }
+
+  #practices4{
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    background-color: lightgray;
+  }
+
+  #practices5{
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  #practices6{
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: lightgray;
+  }
+
+  #practices7{
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  #practices8{
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: lightgray;
+  }
+ 
+  ul {
+    list-style: none;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: larger;
+
+  }
+
+
+  #contact {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
