@@ -254,7 +254,7 @@
 
 
 
-    <section class="page-section" id="contact">
+      <section class="page-section" id="contact">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-8 col-xl-6 text-center">
@@ -273,84 +273,84 @@
                     <!-- https://startbootstrap.com/solution/contact-forms-->
                     <!-- to get an API token!-->
                     <form id="contactForm">
-                      <!-- Name input -->
-                      <div class="form-floating mb-3">
-                        <input class="form-control" id="name" type="text" placeholder="Enter your name..." required>
-                        <label for="name">Full name</label>
-                      </div>
-                    
-                      <!-- Email address input -->
-                      <div class="form-floating mb-3">
-                        <input class="form-control" id="email" type="email" placeholder="name@example.com" required>
-                        <label for="email">Email address</label>
-                      </div>
-                    
-                      <!-- Phone number input -->
-                      <div class="form-floating mb-3">
-                        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" required>
-                        <label for="phone">Phone number</label>
-                      </div>
-                    
-                      <!-- Message input -->
-                      <div class="form-floating mb-3">
-                        <textarea class="form-control" id="message" placeholder="Enter your message here..." style="height: 10rem" required></textarea>
-                        <label for="message">Message</label>
-                      </div>
-                    
-                      <!-- Submit Button -->
-                      <div class="d-grid">
-                        <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Submit</button>
-                      </div>
-                      <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
-                    </form>
-                    
-                    <script>
-                      const form = document.getElementById('contactForm');
-                      const nameInput = document.getElementById('name');
-                      const emailInput = document.getElementById('email');
-                      const phoneInput = document.getElementById('phone');
-                      const messageInput = document.getElementById('message');
-                      const submitButton = document.getElementById('submitButton');
-                    
-                      // Add event listeners to all form inputs to check if they are valid
-                      form.addEventListener('input', checkValidity);
-                    
-                      function checkValidity() {
-                          // Check if all required fields have been filled in
-                        if (nameInput.checkValidity() && emailInput.checkValidity() && phoneInput.checkValidity() && messageInput.checkValidity()) {
-                            // Check if reCAPTCHA has been filled out
-                          const recaptchaInput = document.querySelector('.g-recaptcha-response');
-                          if (recaptchaInput.value) {
-                            submitButton.classList.remove('disabled'); // Enable submit button
+                        <!-- Name input -->
+                        <div class="form-floating mb-3">
+                          <input class="form-control" id="name" type="text" placeholder="Enter your name..." required>
+                          <label for="name">Full name</label>
+                        </div>
+                      
+                        <!-- Email address input -->
+                        <div class="form-floating mb-3">
+                          <input class="form-control" id="email" type="email" placeholder="name@example.com" required>
+                          <label for="email">Email address</label>
+                        </div>
+                      
+                        <!-- Phone number input -->
+                        <div class="form-floating mb-3">
+                          <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" required>
+                          <label for="phone">Phone number</label>
+                        </div>
+                      
+                        <!-- Message input -->
+                        <div class="form-floating mb-3">
+                          <textarea class="form-control" id="message" placeholder="Enter your message here..." style="height: 10rem" required></textarea>
+                          <label for="message">Message</label>
+                        </div>
+                      
+                        <!-- Submit Button -->
+                        <div class="d-grid">
+                          <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Submit</button>
+                        </div>
+                        <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+                      </form>
+                      
+                      <script>
+                        const form = document.getElementById('contactForm');
+                        const nameInput = document.getElementById('name');
+                        const emailInput = document.getElementById('email');
+                        const phoneInput = document.getElementById('phone');
+                        const messageInput = document.getElementById('message');
+                        const submitButton = document.getElementById('submitButton');
+                      
+                        // Add event listeners to all form inputs to check if they are valid
+                        form.addEventListener('input', checkValidity);
+                      
+                        function checkValidity() {
+                            // Check if all required fields have been filled in
+                          if (nameInput.checkValidity() && emailInput.checkValidity() && phoneInput.checkValidity() && messageInput.checkValidity()) {
+                              // Check if reCAPTCHA has been filled out
+                            const recaptchaInput = document.querySelector('.g-recaptcha-response');
+                            if (recaptchaInput.value) {
+                              submitButton.classList.remove('disabled'); // Enable submit button
+                            } else {
+                              submitButton.classList.add('disabled'); // Disable submit button
+                            }
                           } else {
                             submitButton.classList.add('disabled'); // Disable submit button
                           }
-                        } else {
-                          submitButton.classList.add('disabled'); // Disable submit button
                         }
-                      }
-                    
-                      // Add event listener to form submit event
-                      form.addEventListener('submit', (event) => {
-                        event.preventDefault(); // Prevent the default form submission
-                    
-                        // Construct the mailto URL with pre-filled fields
-                        const mailtoUrl = `mailto:admin@thebonnerfirm.com?subject=The Bonner Firm Website Inquiry&body=Name: ${nameInput.value}%0D%0AEmail: ${emailInput.value}%0D%0APhone: ${phoneInput.value}%0D%0AMessage: ${messageInput.value}`;
-                    
-                        // Open the email client with the pre-filled email
-                        window.location.href = mailtoUrl;
-                      });
-                    </script>                                              
-              </div>
-          </div>
-          <div class="row gx-4 gx-lg-5 justify-content-center">
-              <div class="col-lg-4 text-center mb-5 mb-lg-0"> 
-                  <i class="bi-phone fs-2 mb-3 text-muted"></i>
-                  <div>+1 (410) 347-9690</div>
-              </div>
-          </div>   
-      </div>
-    </section>
+                      
+                        // Add event listener to form submit event
+                        form.addEventListener('submit', (event) => {
+                          event.preventDefault(); // Prevent the default form submission
+                      
+                          // Construct the mailto URL with pre-filled fields
+                          const mailtoUrl = `mailto:admin@thebonnerfirm.com?subject=The Bonner Firm Website Inquiry&body=Name: ${nameInput.value}%0D%0AEmail: ${emailInput.value}%0D%0APhone: ${phoneInput.value}%0D%0AMessage: ${messageInput.value}`;
+                      
+                          // Open the email client with the pre-filled email
+                          window.location.href = mailtoUrl;
+                        });
+                      </script>                                              
+                </div>
+            </div>
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-4 text-center mb-5 mb-lg-0"> 
+                    <i class="bi-phone fs-2 mb-3 text-muted"></i>
+                    <div>+1 (410) 347-9690</div>
+                </div>
+            </div>   
+        </div>
+      </section>
 
 
 
